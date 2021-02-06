@@ -8,7 +8,7 @@ const Home = () => (
       <title>Home</title>
     </Head>
     <Header />
-    <div><Button>我是按钮</Button></div>
+    
  </>
 )
 export default Home
