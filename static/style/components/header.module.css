@@ -3,7 +3,7 @@
 
     padding: .4rem;
     overflow: hidden;
-    height: 2.8rem;
+    height: 3.2rem;
     border-bottom:1px solid #ccc;
 }
 .header-logo{
@@ -19,7 +19,7 @@
     padding-left: 0.3rem;
 }
 .ant-meu{
-    line-height: 2.6rem;
+    line-height: 2.8rem;
 
 }
 .ant-menu-item{

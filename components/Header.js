@@ -9,8 +9,8 @@ const Header = () => (
     <div className="header">
       <Row type="flex" justify="center">
           <Col  xs={24} sm={24} md={10} lg={10} xl={10}>
-              <span className="header-logo">技术胖</span>
-              <span className="header-txt">专注前端开发,每年100集免费视频。</span>
+              <span className="header-logo">博客</span>
+              <span className="header-txt">采用nextJS开发的博客网站</span>
           </Col>
   
           <Col className="memu-div" xs={0} sm={0} md={14} lg={8} xl={6}>
