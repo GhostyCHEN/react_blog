@@ -7,6 +7,8 @@ import {
 } from "@ant-design/icons";
 import { Row, Col, List } from "antd";
 import Header from "../components/Header";
+import Author from "../components/Author";
+import Advert from "../components/Advert";
 import "../static/style/pages/index.module.css";
 const Home = () => {
   const [mylist, setMylist] = useState([
@@ -69,7 +71,8 @@ const Home = () => {
         </Col>
 
         <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
-          右侧
+          <Author />
+          <Advert />
         </Col>
       </Row>
     </>
