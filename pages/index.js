@@ -9,6 +9,7 @@ import { Row, Col, List } from "antd";
 import Header from "../components/Header";
 import Author from "../components/Author";
 import Advert from "../components/Advert";
+import Footer from "../components/Footer";
 import "../static/style/pages/index.module.css";
 const Home = () => {
   const [mylist, setMylist] = useState([
@@ -75,6 +76,7 @@ const Home = () => {
           <Advert />
         </Col>
       </Row>
+      <Footer />
     </>
   );
 };
