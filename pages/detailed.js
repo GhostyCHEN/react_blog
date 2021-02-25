@@ -11,13 +11,11 @@ import Author from "../components/Author";
 import Advert from "../components/Advert";
 import Footer from "../components/Footer";
 import "../static/style/pages/detailed.module.css";
-import ReactMarkdown from "react-markdown";
-import MarkNav from "markdown-navbar";
 import axios from "axios";
 import marked from "marked";
 import hljs from "highlight.js";
 import Tocify from "../components/tocify.tsx";
-import "markdown-navbar/dist/navbar.css";
+import servicePath from "../config/apiUrl";
 import "highlight.js/styles/monokai-sublime.css";
 
 const Detailed = (props) => {
@@ -112,7 +110,7 @@ Detailed.getInitialProps = async (context) => {
   console.log(context.query.id);
   let id = context.query.id;
   const promise = new Promise((resolve) => {
-    axios("http://127.0.0.1:7001/default/getArticleById/" + id).then((res) => {
+    axios(servicePath.getArticleById + id).then((res) => {
       console.log(res.data.data[0]);
       resolve(res.data.data[0]);
     });
